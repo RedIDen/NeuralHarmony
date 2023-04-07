@@ -6,8 +6,6 @@ var a = new NeuralHarmonyNetwork("weights.json");
 
 a.Learn(1f, new SongData[]
 {
-    new SongData("С сердцами людей", "RDPE", "C", new string[] { "C", "Am", "F", "G" }),
-    new SongData("С сердцами людей", "RDPE", "Am", new string[] { "Dm", "G", "C", "Am" }),
     new SongData("Can't Stop the Feeling!", "Justin Timberlake", "C", new string[] { "C", "Am", "F", "G" }),
     new SongData("Shut Up and Dance", "Walk the Moon", "C", new string[] { "C", "G", "Am", "F" }),
     new SongData("I Will Wait", "Mumford & Sons", "C", new string[] { "C", "G", "Dm", "Am" }),
@@ -18,8 +16,6 @@ a.Learn(1f, new SongData[]
     new SongData("Uptown Funk", "Mark Ronson ft. Bruno Mars", "C", new string[] { "C", "Dm7", "G7", "C7" }),
     new SongData("We Found Love", "Rihanna ft. Calvin Harris", "C", new string[] { "C", "Am7", "F", "G" }),
     new SongData("Use Somebody", "Kings of Leon", "C", new string[] { "C", "G", "Am", "Em" }),
-        new SongData("С сердцами людей", "RDPE", "C", new string[] { "C", "Am", "F", "G" }),
-    new SongData("С сердцами людей", "RDPE", "Am", new string[] { "Dm", "G", "C", "Am" }),
     new SongData("Can't Stop the Feeling!", "Justin Timberlake", "C", new string[] { "C", "Am", "F", "G" }),
     new SongData("Shut Up and Dance", "Walk the Moon", "C", new string[] { "C", "G", "Am", "F" }),
     new SongData("I Will Wait", "Mumford & Sons", "C", new string[] { "C", "G", "Dm", "Am" }),
@@ -30,8 +26,6 @@ a.Learn(1f, new SongData[]
     new SongData("Uptown Funk", "Mark Ronson ft. Bruno Mars", "C", new string[] { "C", "Dm7", "G7", "C7" }),
     new SongData("We Found Love", "Rihanna ft. Calvin Harris", "C", new string[] { "C", "Am7", "F", "G" }),
     new SongData("Use Somebody", "Kings of Leon", "C", new string[] { "C", "G", "Am", "Em" }),
-        new SongData("С сердцами людей", "RDPE", "C", new string[] { "C", "Am", "F", "G" }),
-    new SongData("С сердцами людей", "RDPE", "Am", new string[] { "Dm", "G", "C", "Am" }),
     new SongData("Can't Stop the Feeling!", "Justin Timberlake", "C", new string[] { "C", "Am", "F", "G" }),
     new SongData("Shut Up and Dance", "Walk the Moon", "C", new string[] { "C", "G", "Am", "F" }),
     new SongData("I Will Wait", "Mumford & Sons", "C", new string[] { "C", "G", "Dm", "Am" }),
