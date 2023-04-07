@@ -25,5 +25,20 @@
 
             Value = ActivationFinction(sum);
         }
+
+        public void Learn(float error, float learningRate, List<float> inputs)
+        {
+            if (inputs.Count != this.Weights.Count)
+            {
+                throw new ArgumentException("A count of inputs must be equal to the count of weights.");
+            }
+
+            var delta = error * ActivationFinctionDx(this.Value);
+
+            for (int i = 0; i < this.Weights.Count; i++)
+            {
+                this.Weights[i] -= inputs[i] * delta * learningRate;
+            }
+        }
     }
 }

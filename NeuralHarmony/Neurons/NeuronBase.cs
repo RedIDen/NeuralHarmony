@@ -16,9 +16,15 @@ namespace NeuralHarmony.Neurons
             this.Name = name;
         }
 
-        protected virtual float ActivationFinction(float x)
+        public static float ActivationFinction(float x)
         {
             return (float)(1.0 / (1.0 + Math.Exp(-x)));
+        }
+
+        public static float ActivationFinctionDx(float x)
+        {
+            var activationFunctionResult = ActivationFinction(x);
+            return activationFunctionResult / (1.0f - activationFunctionResult);
         }
     }
 }
