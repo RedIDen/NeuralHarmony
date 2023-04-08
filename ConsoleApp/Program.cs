@@ -296,24 +296,32 @@ var a = new NeuralHarmonyNetwork("weights.json");
 
 #endregion
 
-Console.Write("Enter key: ");
-string key = Console.ReadLine()!;
-
-Console.Write("Number of chords: ");
-int chords = int.Parse(Console.ReadLine()!);
-
-HashSet<string> harmonies = new HashSet<string>();
-
-Console.WriteLine("Some harmony examples: ");
-while(harmonies.Count < 5)
+while (true)
 {
-    string notes = "  " + string.Join(" ", a.GenerateHarmony(key, chords));
-    harmonies.Add(notes);
-}
+    Console.Write("Enter key: ");
+    string key = Console.ReadLine()!;
 
-foreach(var harmony in harmonies)
-{
-    Console.WriteLine(harmony);
+    Console.Write("Number of chords: ");
+    int chords = int.Parse(Console.ReadLine()!);
+
+    HashSet<string> harmonies = new HashSet<string>();
+
+    Console.WriteLine("Some harmony examples: ");
+    Console.WriteLine();
+    while (harmonies.Count < 5)
+    {
+        string notes = "  " + string.Join(" ", a.GenerateHarmony(key, chords));
+        harmonies.Add(notes);
+    }
+
+    foreach (var harmony in harmonies)
+    {
+        Console.WriteLine(harmony);
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("Press any key to generate again...");
+    Console.ReadKey();
 }
 
 //await a.WriteWeights("weights.json");
