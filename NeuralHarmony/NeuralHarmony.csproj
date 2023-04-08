@@ -10,4 +10,10 @@
     <ProjectReference Include="..\KeyNotes\KeyNotes.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="weights.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

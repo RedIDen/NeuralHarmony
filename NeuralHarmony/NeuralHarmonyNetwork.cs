@@ -170,7 +170,7 @@ namespace NeuralHarmony
 
                     for (int i = 0; i < chords; i++)
                     {
-                        var note = keyNotes.FirstOrDefault(x => harmony[i].ToUpper().StartsWith(x));
+                        var note = keyNotes.LastOrDefault(x => harmony[i].ToUpper().StartsWith(x));
                         if (note is null)
                         {
                             break;
