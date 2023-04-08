@@ -2,8 +2,10 @@
 {
     public class SongData
     {
+        // not used, but added for ease of orientation
         public string? Name { get; set; }
 
+        // not used, but added for ease of orientation
         public string? Author { get; set; }
 
         public string Key { get; set; }
