@@ -21,7 +21,7 @@
             { "G", new string[] { "G", "A", "H", "C", "D", "E", "F#" } },
             { "GM", new string[] { "G", "A", "A#", "C", "D", "D#", "F" } },
             { "G#", new string[] { "G#", "A#", "H#", "C#", "D#", "E#", "F##" } },
-            { "G#M", new string[] { "G#", "A#", "B", "C#", "D#", "E", "F#" } },
+            { "G#M", new string[] { "G#", "A#", "H", "C#", "D#", "E", "F#" } },
             { "A", new string[] { "A", "H", "C#", "D", "E", "F#", "G#" } },
             { "AM", new string[] { "A", "H", "C", "D", "E", "F", "G" } },
             { "A#", new string[] { "A#", "H#", "C##", "D#", "E#", "F##", "G##" } },
