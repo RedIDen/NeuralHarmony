@@ -311,12 +311,10 @@ while (true)
     while (harmonies.Count < 5)
     {
         string notes = "  " + string.Join(" ", a.GenerateHarmony(key, chords));
-        harmonies.Add(notes);
-    }
-
-    foreach (var harmony in harmonies)
-    {
-        Console.WriteLine(harmony);
+        if (harmonies.Add(notes))
+        {
+            Console.WriteLine(notes);
+        }
     }
 
     Console.WriteLine();
