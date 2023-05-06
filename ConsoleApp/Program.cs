@@ -321,5 +321,3 @@ while (true)
     Console.WriteLine("Press any key to generate again...");
     Console.ReadKey();
 }
-
-//await a.WriteWeights("weights.json");
